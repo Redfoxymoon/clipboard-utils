@@ -10,13 +10,7 @@
 #include <string.h>
 #include <libgen.h>
 
-extern int   CloseClipboard(void);
-extern int   OpenClipboard(void *window);
-extern void *SetClipboardData(uint32_t format, void *mem);
-extern int   EmptyClipboard(void);
-extern void *GlobalAlloc(uint32_t flags, size_t size);
-extern void *GlobalLock(void *handle);
-extern int   GlobalUnlock(void *handle);
+#include "win32.h"
 
 #ifndef CF_TEXT
 #define CF_TEXT 1

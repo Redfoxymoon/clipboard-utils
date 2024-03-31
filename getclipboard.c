@@ -8,10 +8,7 @@
 #include <stdio.h>
 #include <stdint.h>
 
-extern void *GetClipboardData(uint32_t format);
-extern int   CloseClipboard(void);
-extern int   OpenClipboard(void *window);
-extern int   IsClipboardFormatAvailable(uint32_t format);
+#include "win32.h"
 
 #ifndef CF_TEXT
 #define CF_TEXT 1
