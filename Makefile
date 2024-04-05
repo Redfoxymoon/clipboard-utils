@@ -1,7 +1,7 @@
 CC      ?= gcc
 CFLAGS  ?= -std=c89 -pedantic -Wall -Wextra
 LDFLAGS ?=
-LIBS    ?= -lkernel32 -luser32 -lu16ports
+LIBS    ?= -lkernel32 -luser32
 PREFIX  ?= /usr/local
 
 all: getclipboard setclipboard

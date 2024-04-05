@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <u16ports/u16ports.h>
+#include <psxxfi/xfi_unicode.h>
 
 #include "win32.h"
 
@@ -41,7 +41,7 @@ int main()
 	memset(buf, '\0', buf_len);
 	p = handle;
 
-	u16_wcstombs(buf, p, buf_len);
+	__xfi_strconv_utf16_to_utf8(p, buf, buf_len, NULL);
 
 	fprintf(stdout, "%s\n", buf);
 #ifdef DEBUG
